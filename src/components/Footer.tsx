@@ -45,15 +45,12 @@ export default function Footer() {
           
           {/* Column 1: Brand & Tagline & Socials (5 cols desktop) */}
           <div className="lg:col-span-5 space-y-5">
-            <Link href="/" className="flex items-center gap-2.5">
-              <div className="w-10 h-10 rounded-xl bg-primary text-white flex items-center justify-center shadow-md">
-                <svg className="w-6 h-6 fill-current" viewBox="0 0 24 24">
-                  <path d="M14 6l-3.8 5.7 1.8 2.7H5l7-11 7 11h-3.2L14 6zM3 20l5-7 3.5 4.9L10 20H3zm18 0h-7l3-4.2 4 4.2z" />
-                </svg>
-              </div>
-              <span className="font-heading font-extrabold text-2xl tracking-tight text-primary">
-                Tiru<span className="text-primary">Veedu</span>
-              </span>
+            <Link href="/" className="flex items-center">
+              <img
+                src="/assets/brandlogo.png"
+                alt="TiruVeedu Logo"
+                className="h-10 w-auto object-contain"
+              />
             </Link>
 
             <p className="text-text-gray text-sm max-w-sm leading-relaxed font-normal">

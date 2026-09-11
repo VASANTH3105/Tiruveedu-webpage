@@ -36,11 +36,11 @@ export default function HeroSection() {
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
         <div className="max-w-2xl lg:max-w-xl xl:max-w-2xl flex flex-col space-y-6 text-left">
           
-          {/* Discover Pill Badge */}
+          {/* Everything in Pill Badge */}
           <div className="inline-flex items-center">
             <span className="inline-flex items-center gap-1.5 px-4 py-1.5 rounded-full bg-accent-orangeLight border border-accent-orange/20 text-accent-orange font-heading font-semibold text-xs tracking-wide shadow-xs">
               <span>✦</span>
-              <span>Discover</span>
+              <span>Everything in</span>
             </span>
           </div>
 
@@ -52,7 +52,7 @@ export default function HeroSection() {
 
           {/* Subtext */}
           <p className="text-text-gray text-base sm:text-lg max-w-xl leading-relaxed font-normal">
-            Temples, stays, food, travel and experiences — explore the spiritual heart of Tamil Nadu.
+            Find places to stay, restaurants, local services, transport and more. Contact properties and providers directly. No hidden fees or commissions.
           </p>
 
           {/* Floating White Pill Search Bar */}

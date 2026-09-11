@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import { Search, Menu, X, ArrowRight, Mountain } from "lucide-react";
+import { Search, Menu, X, ArrowRight } from "lucide-react";
 
 export default function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -22,17 +22,13 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
           
-          {/* Left: Brand Logo */}
-          <Link href="/" className="flex items-center gap-2.5 group">
-            <div className="w-10 h-10 rounded-xl bg-primary/10 text-primary flex items-center justify-center group-hover:bg-primary group-hover:text-white transition-colors duration-200">
-              {/* Custom SVG Mountain icon matching TiruVeedu logo */}
-              <svg className="w-6 h-6 fill-current" viewBox="0 0 24 24">
-                <path d="M14 6l-3.8 5.7 1.8 2.7H5l7-11 7 11h-3.2L14 6zM3 20l5-7 3.5 4.9L10 20H3zm18 0h-7l3-4.2 4 4.2z" />
-              </svg>
-            </div>
-            <span className="font-heading font-extrabold text-2xl tracking-tight text-primary">
-              Tiru<span className="text-primary">Veedu</span>
-            </span>
+          {/* Left: Brand Logo Image */}
+          <Link href="/" className="flex items-center group">
+            <img
+              src="/assets/brandlogo.png"
+              alt="TiruVeedu Logo"
+              className="h-9 sm:h-10 w-auto object-contain transition-transform group-hover:scale-105"
+            />
           </Link>
 
           {/* Desktop Nav Links */}
