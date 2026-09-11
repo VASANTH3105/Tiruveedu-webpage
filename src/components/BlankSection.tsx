@@ -1,0 +1,12 @@
+import React from "react";
+
+export default function BlankSection() {
+  return (
+    <section id="custom-section-between-hero-and-plan" className="py-8 sm:py-12 bg-white">
+      {/* SECTION: Custom Section between Hero & Plan Your Visit — To be specified later */}
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        {/* Blank container placeholder */}
+      </div>
+    </section>
+  );
+}
