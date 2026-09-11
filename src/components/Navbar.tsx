@@ -18,7 +18,7 @@ export default function Navbar() {
   ];
 
   return (
-    <header className="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-slate-100 transition-all">
+    <header className="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-[#E7E2F2] transition-all">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
           
@@ -37,10 +37,10 @@ export default function Navbar() {
               <Link
                 key={item.label}
                 href={item.href}
-                className={`px-3 py-2 rounded-lg text-sm font-medium transition-colors ${
+                className={`px-3.5 py-2 rounded-xl text-sm font-medium transition-colors ${
                   item.active
-                    ? "text-primary font-bold bg-slate-100/70"
-                    : "text-text-gray hover:text-primary hover:bg-slate-50"
+                    ? "text-[#4935D4] font-bold bg-[#F5F1FF] border border-[#E7E2F2]"
+                    : "text-[#625F73] hover:text-[#4935D4] hover:bg-[#F5F1FF]/60"
                 }`}
               >
                 {item.label}
@@ -53,15 +53,15 @@ export default function Navbar() {
             {/* Search Icon Button */}
             <button
               aria-label="Search"
-              className="w-10 h-10 rounded-full bg-slate-100 text-text-gray hover:text-primary hover:bg-slate-200/80 flex items-center justify-center transition-colors"
+              className="w-10 h-10 rounded-full bg-[#F5F1FF] text-[#4935D4] hover:bg-[#EBE3FF] border border-[#E7E2F2] flex items-center justify-center transition-all"
             >
               <Search className="w-4 h-4" />
             </button>
 
-            {/* Orange CTA Pill Button */}
+            {/* Brand Gradient CTA Pill Button */}
             <Link
               href="#plan"
-              className="inline-flex items-center gap-2 bg-accent-orange hover:bg-accent-orange/90 text-white font-heading font-semibold text-sm px-5 py-2.5 rounded-full shadow-md shadow-accent-orange/20 hover:shadow-lg hover:shadow-accent-orange/30 transition-all transform hover:-translate-y-0.5 active:translate-y-0"
+              className="inline-flex items-center gap-2 bg-gradient-to-r from-[#4935D4] via-[#6C3DF5] to-[#C084FC] hover:from-[#3C29C2] hover:to-[#B06DEF] text-white font-heading font-semibold text-sm px-6 py-2.5 rounded-xl shadow-purpleGlow hover:shadow-btnHover transition-all transform hover:-translate-y-0.5"
             >
               <span>Plan Your Trip</span>
               <ArrowRight className="w-4 h-4" />
@@ -70,7 +70,7 @@ export default function Navbar() {
             {/* Mobile Hamburger Button */}
             <button
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-              className="md:hidden p-2 rounded-lg text-text-gray hover:text-primary hover:bg-slate-100 transition-colors"
+              className="md:hidden p-2 rounded-xl text-[#17152B] hover:bg-[#F5F1FF] transition-colors"
               aria-label="Toggle menu"
             >
               {mobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
@@ -81,7 +81,7 @@ export default function Navbar() {
 
       {/* Mobile Navigation Drawer */}
       {mobileMenuOpen && (
-        <div className="md:hidden border-b border-slate-200 bg-white px-4 pt-2 pb-6 space-y-2 shadow-lg animate-in slide-in-from-top duration-200">
+        <div className="md:hidden border-b border-[#E7E2F2] bg-white px-4 pt-2 pb-6 space-y-2 shadow-lg animate-in slide-in-from-top duration-200">
           {navItems.map((item) => (
             <Link
               key={item.label}
@@ -89,8 +89,8 @@ export default function Navbar() {
               onClick={() => setMobileMenuOpen(false)}
               className={`block px-4 py-2.5 rounded-xl text-base font-medium transition-colors ${
                 item.active
-                  ? "text-primary font-bold bg-slate-100"
-                  : "text-text-gray hover:text-primary hover:bg-slate-50"
+                  ? "text-[#4935D4] font-bold bg-[#F5F1FF]"
+                  : "text-[#625F73] hover:text-[#4935D4] hover:bg-[#F5F1FF]/60"
               }`}
             >
               {item.label}

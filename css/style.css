@@ -10,20 +10,23 @@
 
 /* --- Reset & Variables --- */
 :root {
-  --color-primary: #0F2C59;
-  --color-orange: #F5821F;
-  --color-red: #E63946;
+  --color-primary: #4935D4;
+  --color-[#17152B]: #17152B;
+  --color-main: #6C3DF5;
+  --color-accent: #8B4DFF;
+  --color-highlight: #C084FC;
   --color-bg-white: #FFFFFF;
-  --color-bg-light: #F7F8FA;
-  --color-text-dark: #0F2C59;
-  --color-text-gray: #5A6472;
+  --color-bg-light: #FAF9FF;
+  --color-text-dark: #17152B;
+  --color-text-gray: #625F73;
+  --color-border: #E7E2F2;
   --font-heading: 'Poppins', sans-serif;
   --font-body: 'Inter', sans-serif;
   --font-script: 'Caveat', cursive;
   --radius-pill: 9999px;
   --radius-card: 20px;
-  --shadow-soft: 0 10px 30px -5px rgba(15, 44, 89, 0.08);
-  --shadow-card: 0 15px 35px -5px rgba(15, 44, 89, 0.12);
+  --shadow-soft: 0 10px 30px -5px rgba(23, 16, 79, 0.04);
+  --shadow-card: 0 15px 35px -5px rgba(23, 16, 79, 0.08);
 }
 
 *, *::before, *::after {
