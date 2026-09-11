@@ -9,25 +9,30 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        primary: {
-          DEFAULT: "#0F2C59", // Dark navy
-          dark: "#0A1F3F",
-          light: "#183D75",
-        },
-        accent: {
-          orange: "#F5821F",
-          red: "#E63946",
-          orangeLight: "#FFF4EB",
-        },
-        text: {
-          dark: "#0F2C59",
-          gray: "#5A6472",
-          muted: "#8A94A6",
+        brand: {
+          deep: "#17104F",
+          primary: "#4935D4",
+          main: "#6C3DF5",
+          accent: "#8B4DFF",
+          highlight: "#C084FC",
+          light: "#F5F1FF",
+          border: "#E7E2F2",
+          borderHover: "#D8CCFF",
         },
         bg: {
-          offwhite: "#FFFFFF",
-          lightgray: "#F7F8FA",
+          offwhite: "#FAF9FF",
+          card: "#FFFFFF",
         },
+        text: {
+          dark: "#17152B",
+          muted: "#625F73",
+          light: "#A09CB3",
+        },
+      },
+      backgroundImage: {
+        'brand-gradient': "linear-gradient(135deg, #4935D4 0%, #6C3DF5 50%, #C084FC 100%)",
+        'brand-gradient-hover': "linear-gradient(135deg, #3C29C2 0%, #5B2CE4 50%, #B06DEF 100%)",
+        'brand-glow': "radial-gradient(circle at 50% 50%, rgba(108, 61, 245, 0.15) 0%, rgba(192, 132, 252, 0.05) 50%, transparent 100%)",
       },
       fontFamily: {
         heading: ["var(--font-poppins)", "sans-serif"],
@@ -35,14 +40,15 @@ const config: Config = {
         script: ["var(--font-caveat)", "cursive"],
       },
       boxShadow: {
-        soft: "0 10px 30px -5px rgba(15, 44, 89, 0.08)",
-        card: "0 15px 35px -5px rgba(15, 44, 89, 0.12)",
-        float: "0 20px 40px -10px rgba(245, 130, 31, 0.25)",
+        soft: "0 10px 30px -5px rgba(23, 16, 79, 0.04)",
+        card: "0 15px 35px -5px rgba(23, 16, 79, 0.08)",
+        purpleGlow: "0 12px 28px -6px rgba(108, 61, 245, 0.35)",
+        btnHover: "0 14px 32px -4px rgba(108, 61, 245, 0.45)",
       },
       borderRadius: {
-        '2xl': '1rem',
-        '3xl': '1.5rem',
-        '4xl': '2rem',
+        'xl': '0.75rem',    // 12px
+        '2xl': '1rem',      // 16px
+        '3xl': '1.5rem',    // 24px
       }
     },
   },

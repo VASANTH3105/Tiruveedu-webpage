@@ -9,7 +9,6 @@ import {
   Building,
   CloudSun,
   PlusCircle,
-  ExternalLink,
 } from "lucide-react";
 
 export default function ReviewsAndInfoSection() {
@@ -31,39 +30,35 @@ export default function ReviewsAndInfoSection() {
   const infoPills = [
     {
       id: "girivalam",
-      icon: <Moon className="w-5 h-5 text-purple-600" />,
+      icon: <Moon className="w-5 h-5 text-[#6C3DF5]" />,
       title: "Next Girivalam / Full Moon",
       detail: "26 Sept 2026",
       subtext: "15 days to go",
-      bgClass: "bg-purple-50/90 border-purple-100/80 text-purple-950",
-      accentColor: "text-purple-700",
+      bgClass: "bg-[#F5F1FF] border-[#D8CCFF] text-[#17152B]",
     },
     {
       id: "events",
-      icon: <Calendar className="w-5 h-5 text-sky-600" />,
+      icon: <Calendar className="w-5 h-5 text-indigo-600" />,
       title: "Today's Events",
       detail: "1 event",
       subtext: "Happening today",
-      bgClass: "bg-sky-50/90 border-sky-100/80 text-sky-950",
-      accentColor: "text-sky-700",
+      bgClass: "bg-indigo-50/70 border-indigo-100 text-[#17152B]",
     },
     {
       id: "temple-timings",
-      icon: <Landmark className="w-5 h-5 text-amber-600" />,
+      icon: <Landmark className="w-5 h-5 text-purple-600" />,
       title: "Arunachaleswarar Temple",
       detail: "5:00 AM – 9:30 PM",
       subtext: "Open everyday",
-      bgClass: "bg-amber-50/90 border-amber-100/80 text-amber-950",
-      accentColor: "text-amber-700",
+      bgClass: "bg-purple-50/70 border-purple-100 text-[#17152B]",
     },
     {
       id: "ashram-timings",
-      icon: <Building className="w-5 h-5 text-rose-600" />,
+      icon: <Building className="w-5 h-5 text-fuchsia-600" />,
       title: "Ramana Ashram",
       detail: "5:30 AM – 8:00 PM",
       subtext: "Closed 12 – 2 PM",
-      bgClass: "bg-rose-50/90 border-rose-100/80 text-rose-950",
-      accentColor: "text-rose-700",
+      bgClass: "bg-fuchsia-50/70 border-fuchsia-100 text-[#17152B]",
     },
     {
       id: "new-listings",
@@ -71,22 +66,20 @@ export default function ReviewsAndInfoSection() {
       title: "New This Week",
       detail: "51 new listings",
       subtext: "Added in the last 7 days",
-      bgClass: "bg-emerald-50/90 border-emerald-100/80 text-emerald-950",
-      accentColor: "text-emerald-700",
+      bgClass: "bg-emerald-50/70 border-emerald-100 text-[#17152B]",
     },
     {
       id: "weather",
-      icon: <CloudSun className="w-5 h-5 text-orange-600" />,
+      icon: <CloudSun className="w-5 h-5 text-[#8B4DFF]" />,
       title: "Weather Now",
       detail: "33°C",
       subtext: "Overcast",
-      bgClass: "bg-orange-50/90 border-orange-100/80 text-orange-950",
-      accentColor: "text-orange-700",
+      bgClass: "bg-[#F5F1FF] border-[#D8CCFF] text-[#17152B]",
     },
   ];
 
   return (
-    <section className="py-14 sm:py-20 bg-white">
+    <section className="py-14 sm:py-20 bg-[#FAF9FF]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12 sm:space-y-16">
         
         {/* =========================================================================
@@ -94,7 +87,7 @@ export default function ReviewsAndInfoSection() {
             ========================================================================= */}
         <div className="space-y-8">
           <div className="text-center">
-            <h2 className="font-heading font-extrabold text-2xl sm:text-3xl lg:text-4xl text-primary tracking-tight">
+            <h2 className="font-heading font-extrabold text-2xl sm:text-3xl lg:text-4xl text-[#17152B] tracking-tight">
               What people are saying about TiruVeedu
             </h2>
           </div>
@@ -102,7 +95,7 @@ export default function ReviewsAndInfoSection() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             
             {/* Card 1: Google Rating Score Summary */}
-            <div className="bg-white rounded-3xl p-6 border border-slate-100 shadow-sm flex flex-col items-center justify-center text-center space-y-2">
+            <div className="bg-white rounded-3xl p-6 border border-[#E7E2F2] shadow-sm flex flex-col items-center justify-center text-center space-y-2">
               {/* Google G Logo */}
               <div className="w-10 h-10 flex items-center justify-center">
                 <svg className="w-8 h-8" viewBox="0 0 24 24">
@@ -125,7 +118,7 @@ export default function ReviewsAndInfoSection() {
                 </svg>
               </div>
 
-              <div className="font-heading font-extrabold text-3xl sm:text-4xl text-primary">
+              <div className="font-heading font-extrabold text-3xl sm:text-4xl text-[#17152B]">
                 5.0
               </div>
 
@@ -133,12 +126,12 @@ export default function ReviewsAndInfoSection() {
                 {[...Array(5)].map((_, i) => (
                   <Star
                     key={i}
-                    className="w-4 h-4 fill-accent-orange text-accent-orange"
+                    className="w-4 h-4 fill-[#6C3DF5] text-[#6C3DF5]"
                   />
                 ))}
               </div>
 
-              <p className="text-xs text-text-gray font-medium pt-1">
+              <p className="text-xs text-[#625F73] font-medium pt-1">
                 Based on 6 Google reviews
               </p>
             </div>
@@ -147,36 +140,36 @@ export default function ReviewsAndInfoSection() {
             {reviews.map((rev) => (
               <div
                 key={rev.id}
-                className="bg-white rounded-3xl p-6 border border-slate-100 shadow-sm flex flex-col justify-between space-y-4"
+                className="bg-white rounded-3xl p-6 border border-[#E7E2F2] shadow-sm flex flex-col justify-between space-y-4"
               >
                 <div className="space-y-3">
                   <div className="flex items-center gap-1">
                     {[...Array(rev.stars)].map((_, i) => (
                       <Star
                         key={i}
-                        className="w-4 h-4 fill-accent-orange text-accent-orange"
+                        className="w-4 h-4 fill-[#6C3DF5] text-[#6C3DF5]"
                       />
                     ))}
                   </div>
 
-                  <p className="text-text-dark text-sm sm:text-base font-normal leading-relaxed">
+                  <p className="text-[#17152B] text-sm sm:text-base font-normal leading-relaxed">
                     &ldquo;{rev.text}&rdquo;
                   </p>
                 </div>
 
-                <div className="font-heading font-semibold text-xs sm:text-sm text-text-gray pt-2">
+                <div className="font-heading font-semibold text-xs sm:text-sm text-[#625F73] pt-2">
                   — {rev.author}
                 </div>
               </div>
             ))}
 
             {/* Card 4: Leave a Review CTA Card */}
-            <div className="bg-white rounded-3xl p-6 border border-slate-100 shadow-sm flex flex-col items-center justify-center text-center space-y-3">
-              <h3 className="font-heading font-bold text-lg text-primary">
+            <div className="bg-white rounded-3xl p-6 border border-[#E7E2F2] shadow-sm flex flex-col items-center justify-center text-center space-y-3">
+              <h3 className="font-heading font-bold text-lg text-[#17152B]">
                 Enjoying TiruVeedu?
               </h3>
               
-              <p className="text-xs sm:text-sm text-text-gray max-w-xs font-normal">
+              <p className="text-xs sm:text-sm text-[#625F73] max-w-xs font-normal">
                 Leave us a Google review and support local!
               </p>
 
@@ -184,10 +177,10 @@ export default function ReviewsAndInfoSection() {
                 href="https://google.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 bg-[#635BFF] hover:bg-[#5249E0] text-white font-heading font-semibold text-xs sm:text-sm px-5 py-2.5 rounded-full shadow-md transition-all transform hover:-translate-y-0.5"
+                className="inline-flex items-center gap-2 bg-gradient-to-r from-[#4935D4] via-[#6C3DF5] to-[#C084FC] hover:from-[#3C29C2] hover:to-[#B06DEF] text-white font-heading font-semibold text-xs sm:text-sm px-5 py-2.5 rounded-xl shadow-purpleGlow transition-all transform hover:-translate-y-0.5"
               >
                 <span>Leave a Review</span>
-                <span className="bg-white text-[#635BFF] rounded-full w-4 h-4 text-[10px] font-bold flex items-center justify-center">
+                <span className="bg-white text-[#4935D4] rounded-full w-4 h-4 text-[10px] font-bold flex items-center justify-center">
                   G
                 </span>
               </a>
@@ -206,19 +199,19 @@ export default function ReviewsAndInfoSection() {
               className={`rounded-2xl p-4 sm:p-5 border ${pill.bgClass} flex items-start gap-4 shadow-xs transition-all hover:shadow-md transform hover:-translate-y-0.5`}
             >
               {/* Icon Circle Container */}
-              <div className="w-10 h-10 rounded-xl bg-white/80 shadow-xs flex items-center justify-center shrink-0">
+              <div className="w-10 h-10 rounded-xl bg-white shadow-xs flex items-center justify-center shrink-0 border border-[#E7E2F2]">
                 {pill.icon}
               </div>
 
               {/* Text Info */}
               <div className="space-y-0.5">
-                <div className="text-xs font-semibold text-text-gray">
+                <div className="text-xs font-semibold text-[#625F73]">
                   {pill.title}
                 </div>
-                <div className="font-heading font-extrabold text-base sm:text-lg tracking-tight">
+                <div className="font-heading font-extrabold text-base sm:text-lg tracking-tight text-[#17152B]">
                   {pill.detail}
                 </div>
-                <div className="text-xs font-medium text-text-muted">
+                <div className="text-xs font-medium text-[#625F73]/80">
                   {pill.subtext}
                 </div>
               </div>

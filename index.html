@@ -157,14 +157,18 @@
       </div>
     </div>
   </section>
+  <!-- ==========================================
+       FEATURED LISTINGS SECTION
+       ========================================== -->
   <section class="featured-section" id="featured">
     <div class="container">
       <div class="featured-header">
         <div>
-          <h2>Featured Listings</h2>
+          <span class="sub-label">EXPLORE</span>
+          <h2>Featured <span class="text-purple">Listings</span></h2>
           <p>Handpicked places to make your trip memorable.</p>
         </div>
-        <a href="#view-all" class="btn btn-outline">
+        <a href="#view-all" class="btn btn-secondary-purple">
           View All <i class="fa-solid fa-arrow-right"></i>
         </a>
       </div>
@@ -175,14 +179,14 @@
           <div class="listing-img-frame">
             <img src="https://chatgpt.com/s/m_6aa39ff378148191a3f4ba480b68015a" alt="Arunachaleswarar Temple" class="listing-img" />
             <button class="fav-btn" aria-label="Favorite"><i class="fa-regular fa-heart"></i></button>
+            <span class="img-location-badge"><i class="fa-solid fa-location-dot"></i> Tiruvannamalai</span>
           </div>
           <div class="listing-body">
-            <span class="badge badge-amber">Temple</span>
+            <span class="badge badge-purple"><i class="fa-solid fa-gopuram"></i> Temple</span>
             <h3>Arunachaleswarar Temple</h3>
             <p class="subtitle">A spiritual landmark</p>
-            <p class="location"><i class="fa-solid fa-location-dot"></i> Tiruvannamalai</p>
             <div class="listing-footer">
-              <span class="rating"><i class="fa-solid fa-star text-orange"></i> 4.8 <span class="count">(1.2k)</span></span>
+              <span class="rating"><i class="fa-solid fa-star text-amber"></i> 4.8 <span class="count">(1.2k)</span></span>
               <a href="#" class="arrow-btn"><i class="fa-solid fa-arrow-right"></i></a>
             </div>
           </div>
@@ -195,31 +199,48 @@
             <button class="fav-btn" aria-label="Favorite"><i class="fa-regular fa-heart"></i></button>
           </div>
           <div class="listing-body">
-            <span class="badge badge-green">Transport</span>
+            <span class="badge badge-purple"><i class="fa-solid fa-motorcycle"></i> Transport</span>
             <h3>EV Bike Rentals</h3>
             <p class="subtitle">Explore with freedom</p>
-            <p class="location"><i class="fa-solid fa-location-dot"></i> Tiruvannamalai</p>
+
+            <div class="feature-tags-grid">
+              <div class="feature-tag"><i class="fa-solid fa-[#6C3DF5] fa-leaf text-emerald"></i> <span>Eco Friendly</span></div>
+              <div class="feature-tag"><i class="fa-solid fa-shield-halved text-sky"></i> <span>Well Maintained</span></div>
+              <div class="feature-tag"><i class="fa-solid fa-bolt text-amber"></i> <span>Instant Booking</span></div>
+            </div>
+
+            <p class="location"><i class="fa-solid fa-location-dot text-purple"></i> Tiruvannamalai</p>
+
             <div class="listing-footer">
-              <span class="rating"><i class="fa-solid fa-star text-orange"></i> 4.6 <span class="count">(320)</span></span>
+              <span class="rating"><i class="fa-solid fa-star text-amber"></i> 4.6 <span class="count">(320)</span></span>
               <a href="#" class="arrow-btn"><i class="fa-solid fa-arrow-right"></i></a>
             </div>
           </div>
         </div>
 
-        <!-- Card 3: Rickshaw -->
-        <div class="listing-card">
+        <!-- Card 3: Rickshaw (HIGHLIGHTED / MOST POPULAR) -->
+        <div class="listing-card popular-card">
           <div class="listing-img-frame bg-light">
             <img src="assets/rickshaw.png" alt="City Auto Service" class="listing-img contain-img" />
+            <span class="popular-badge"><i class="fa-solid fa-crown"></i> Most Popular</span>
             <button class="fav-btn" aria-label="Favorite"><i class="fa-regular fa-heart"></i></button>
           </div>
           <div class="listing-body">
-            <span class="badge badge-blue">Transport</span>
+            <span class="badge badge-purple"><i class="fa-solid fa-taxi"></i> Transport</span>
             <h3>City Auto Service</h3>
             <p class="subtitle">Safe • Reliable • Local</p>
-            <p class="location"><i class="fa-solid fa-location-dot"></i> Tiruvannamalai</p>
+
+            <div class="feature-tags-grid">
+              <div class="feature-tag"><i class="fa-solid fa-user-check text-purple"></i> <span>Verified Drivers</span></div>
+              <div class="feature-tag"><i class="fa-solid fa-clock text-purple"></i> <span>On-time Service</span></div>
+              <div class="feature-tag"><i class="fa-solid fa-users text-purple"></i> <span>Local Experts</span></div>
+            </div>
+
+            <p class="location"><i class="fa-solid fa-location-dot text-purple"></i> Tiruvannamalai</p>
+
             <div class="listing-footer">
-              <span class="rating"><i class="fa-solid fa-star text-orange"></i> 4.4 <span class="count">(210)</span></span>
-              <a href="#" class="arrow-btn"><i class="fa-solid fa-arrow-right"></i></a>
+              <span class="rating"><i class="fa-solid fa-star text-amber"></i> 4.4 <span class="count">(210)</span></span>
+              <a href="#" class="arrow-btn arrow-btn-gradient"><i class="fa-solid fa-arrow-right"></i></a>
             </div>
           </div>
         </div>
@@ -231,15 +252,36 @@
             <button class="fav-btn" aria-label="Favorite"><i class="fa-regular fa-heart"></i></button>
           </div>
           <div class="listing-body">
-            <span class="badge badge-orange">Transport</span>
+            <span class="badge badge-purple"><i class="fa-solid fa-car"></i> Transport</span>
             <h3>Outstation Taxi Service</h3>
             <p class="subtitle">Comfortable & On-time</p>
-            <p class="location"><i class="fa-solid fa-location-dot"></i> Tiruvannamalai</p>
+
+            <div class="feature-tags-grid">
+              <div class="feature-tag"><i class="fa-solid fa-couch text-purple"></i> <span>Comfortable</span></div>
+              <div class="feature-tag"><i class="fa-solid fa-shield text-purple"></i> <span>Safe & Secure</span></div>
+              <div class="feature-tag"><i class="fa-solid fa-globe text-purple"></i> <span>All Destinations</span></div>
+            </div>
+
+            <p class="location"><i class="fa-solid fa-location-dot text-purple"></i> Tiruvannamalai</p>
+
             <div class="listing-footer">
-              <span class="rating"><i class="fa-solid fa-star text-orange"></i> 4.9 <span class="count">(450)</span></span>
+              <span class="rating"><i class="fa-solid fa-star text-amber"></i> 4.9 <span class="count">(450)</span></span>
               <a href="#" class="arrow-btn"><i class="fa-solid fa-arrow-right"></i></a>
             </div>
           </div>
+        </div>
+      </div>
+
+      <!-- Carousel Navigation Controls -->
+      <div class="carousel-controls-row">
+        <div class="carousel-dots">
+          <span class="dot active-dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+        </div>
+        <div class="carousel-arrows">
+          <button class="nav-arrow-btn" aria-label="Previous"><i class="fa-solid fa-arrow-left"></i></button>
+          <button class="nav-arrow-btn nav-arrow-active" aria-label="Next"><i class="fa-solid fa-arrow-right"></i></button>
         </div>
       </div>
     </div>
