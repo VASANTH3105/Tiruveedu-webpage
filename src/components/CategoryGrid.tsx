@@ -114,6 +114,8 @@ export default function CategoryGrid() {
     // },
   ];
 
+
+  
   return (
     <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-3.5 pt-2">
       {categories.map((cat) => (
